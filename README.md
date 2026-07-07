@@ -6,6 +6,7 @@
 Платформа: Steam / Epic Games / Microsoft Store (Xbox)
 
 Для полного обхода бана вам нужен спуфер, рекомендуем использовать наш приватный RUBY SPOOFER:
+
 **Сайт - https://rubyspoofer.github.io/ruby/**
 
 **Discord - https://discord.gg/btJn66hAuM**

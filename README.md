@@ -7,6 +7,7 @@
 
 Для полного обхода бана вам нужен спуфер, рекомендуем использовать наш приватный RUBY SPOOFER:
 **Сайт - https://rubyspoofer.github.io/ruby/**
+
 **Discord - https://discord.gg/btJn66hAuM**
 
 <img width="977" height="509" alt="image" src="https://github.com/user-attachments/assets/95f21e96-2c66-4f6a-9761-3126703a054e" />

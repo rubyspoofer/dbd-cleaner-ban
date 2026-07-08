@@ -5,33 +5,33 @@ import sys
 from pathlib import Path
 
 ASCII_MS = r"""
-         ____  __    ____     ________                              ____              __  ________
-        / __ \/ /_  / __ \   / ____/ / _  ____ _____  ___  _____   / __/___  _____   /  |/  / ___/
-       / / / / __ \/ / / /  / /   / / _ \/ __ `/ __ \/ _ \/ ___/  / /_/ __ \/ ___/  / /|_/ /\__ \ 
-      / /_/ / /_/ / /_/ /  / /___/ /  __/ /_/ / / / /  __/ /     / __/ /_/ / /     / /  / /___/ / 
-     /_____/_.___/_____/   \____/_/\___/\__,_/_/ /_/\___/_/     /_/  \____/_/     /_/  /_//____/  
+    ____  __    ____     ________                              ____              __  ________
+   / __ \/ /_  / __ \   / ____/ /__  ____ _____  ___  _____   / __/___  _____   /  |/  / ___/
+  / / / / __ \/ / / /  / /   / / _ \/ __ `/ __ \/ _ \/ ___/  / /_/ __ \/ ___/  / /|_/ /\__ \ 
+ / /_/ / /_/ / /_/ /  / /___/ /  __/ /_/ / / / /  __/ /     / __/ /_/ / /     / /  / /___/ / 
+/_____/_.___/_____/   \____/_/\___/\__,_/_/ /_/\___/_/     /_/  \____/_/     /_/  /_//____/  
 """
 
 ASCII_STEAM = r"""
-         ____  __    ____     ________                              ____              _____ __                     
-        / __ \/ /_  / __ \   / ____/ /__  ____ _____  ___  _____   / __/___  _____   / ___// /____  ____ _____ ___ 
-       / / / / __ \/ / / /  / /   / / _ \/ __ `/ __ \/ _ \/ ___/  / /_/ __ \/ ___/   \__ \/ __/ _ \/ __ `/ __ `__ \
-      / /_/ / /_/ / /_/ /  / /___/ /  __/ /_/ / / / /  __/ /     / __/ /_/ / /      ___/ / /_/  __/ /_/ / / / / / /
-     /_____/_.___/_____/   \____/_/\___/\__,_/_/ /_/\___/_/     /_/  \____/_/      /____/\__/\___/\__,_/_/ /_/ /_/ 
+    ____  __    ____     ________                              ____              _____ __                     
+   / __ \/ /_  / __ \   / ____/ /__  ____ _____  ___  _____   / __/___  _____   / ___// /____  ____ _____ ___ 
+  / / / / __ \/ / / /  / /   / / _ \/ __ `/ __ \/ _ \/ ___/  / /_/ __ \/ ___/   \__ \/ __/ _ \/ __ `/ __ `__ \
+ / /_/ / /_/ / /_/ /  / /___/ /  __/ /_/ / / / /  __/ /     / __/ /_/ / /      ___/ / /_/  __/ /_/ / / / / / /
+/_____/_.___/_____/   \____/_/\___/\__,_/_/ /_/\___/_/     /_/  \____/_/      /____/\__/\___/\__,_/_/ /_/ /_/ 
 """
 
 ASCII_EPIC = r"""
-         ____  __    ____     ________                              ____              _________________
-        / __ \/ /_  / __ \   / ____/ /__  ____ _____  ___  _____   / __/___  _____   / ____/ ____/ ___/
-       / / / / __ \/ / / /  / /   / / _ \/ __ `/ __ \/ _ \/ ___/  / /_/ __ \/ ___/  / __/ / / __ \__ \ 
-      / /_/ / /_/ / /_/ /  / /___/ /  __/ /_/ / / / /  __/ /     / __/ /_/ / /     / /___/ /_/ /___/ / 
-     /_____/_.___/_____/   \____/_/\___/\__,_/_/ /_/\___/_/     /_/  \____/_/     /_____/\____//____/  
+    ____  __    ____     ________                              ____              _________________
+   / __ \/ /_  / __ \   / ____/ /__  ____ _____  ___  _____   / __/___  _____   / ____/ ____/ ___/
+  / / / / __ \/ / / /  / /   / / _ \/ __ `/ __ \/ _ \/ ___/  / /_/ __ \/ ___/  / __/ / / __ \__ \ 
+ / /_/ / /_/ / /_/ /  / /___/ /  __/ /_/ / / / /  __/ /     / __/ /_/ / /     / /___/ /_/ /___/ / 
+/_____/_.___/_____/   \____/_/\___/\__,_/_/ /_/\___/_/     /_/  \____/_/     /_____/\____//____/  
 """
 
 def get_texts(lang):
     if lang == "ru":
         return {
-            "title": "=== DBD CLEANER ===",
+            "title": "=== DBD ACCOUNT CLEANER ===",
             "choose_lang": "Выберите язык / Choose language",
             "ru": "1) Русский",
             "en": "2) English",
@@ -42,8 +42,8 @@ def get_texts(lang):
             "save_data": "Сохранить выбор? [Y/N]",
             "main_menu": "\n=== ГЛАВНОЕ МЕНЮ ===",
             "start_clean": "1) > Start Cleaner - запустить очистку",
-            "information": "2) > Information",
-            "change_platform": "3) > Change Platform",
+            "change_platform": "2) > Сменить платформу",
+            "change_language": "3) > Сменить язык",
             "exit": "4) > Exit",
             "choose_type": "Выбери тип очистки:",
             "full_clean": "1) > Полная чистка. (Очищает все от Microsoft Store / Xbox, поможет от бана по железу и бана лицензии.)",
@@ -56,7 +56,7 @@ def get_texts(lang):
         }
     else:
         return {
-            "title": "=== DBD CLEANER ===",
+            "title": "=== DBD ACCOUNT CLEANER ===",
             "choose_lang": "Choose language",
             "ru": "1) Russian",
             "en": "2) English",
@@ -67,8 +67,8 @@ def get_texts(lang):
             "save_data": "Save selection? [Y/N]",
             "main_menu": "\n=== MAIN MENU ===",
             "start_clean": "1) > Start Cleaner",
-            "information": "2) > Information",
-            "change_platform": "3) > Change Platform",
+            "change_platform": "2) > Change Platform",
+            "change_language": "3) > Change Language",
             "exit": "4) > Exit",
             "choose_type": "Choose cleanup type:",
             "full_clean": "1) > Full Cleanup. (Cleans everything from Microsoft Store / Xbox, helps with HWID and license bans.)",
@@ -115,8 +115,8 @@ def load_settings():
     except:
         return None, None
 
-def clean_paths(platform, lang="ru"):
-    texts = get_texts(lang)
+def clean_paths(platform):
+    texts = get_texts("ru")
     clear_console()
     
     if platform == "Microsoft Store":
@@ -158,28 +158,20 @@ def clean_paths(platform, lang="ru"):
         os.system("wsreset.exe")
 
     if platform == "Steam":
-        print("[+] Очистка Steam...")
-        steam_folders = ["appcache", "depotcache", "htmlcache", "steamapps/downloading", "steamapps/temp", "steamapps/workshop"]
-        steam_paths = [rf"%ProgramFiles(x86)%\Steam\{folder}" for folder in steam_folders]
-        steam_paths.extend([r"%LOCALAPPDATA%\Steam", r"%APPDATA%\Steam"])
-        for p_str in steam_paths:
+        print("[+] Улучшенная очистка Steam...")
+        steam_folders = ["appcache", "depotcache", "htmlcache"]
+        for folder in steam_folders:
             try:
-                p = Path(os.path.expandvars(p_str))
+                p = Path(os.path.expandvars(rf"%ProgramFiles(x86)%\Steam\{folder}"))
                 if p.exists():
                     shutil.rmtree(p, ignore_errors=True)
-                    print(f"    → {p.name if hasattr(p, 'name') else p_str.split('\\')[-1]} очищен")
+                    print(f"    → {folder} очищен")
             except:
                 pass
 
     if platform == "Epic Games":
-        print("[+] Очистка Epic Games...")
-        epic_folders = [
-            r"%LOCALAPPDATA%\EpicGamesLauncher",
-            r"%LOCALAPPDATA%\Epic Games",
-            r"%LOCALAPPDATA%\UnrealEngine",
-            r"%APPDATA%\Epic",
-            r"%ProgramData%\Epic"
-        ]
+        print("[+] Улучшенная очистка Epic Games...")
+        epic_folders = [r"%LOCALAPPDATA%\EpicGamesLauncher", r"%LOCALAPPDATA%\Epic Games"]
         for p_str in epic_folders:
             try:
                 p = Path(os.path.expandvars(p_str))
@@ -245,29 +237,25 @@ def main():
         print(texts["title"])
         print(texts["main_menu"])
         print(texts["start_clean"])
-        print(texts["information"])
         print(texts["change_platform"])
+        print(texts["change_language"])
         print(texts["exit"])
         
         choice = input("\nВыберите опцию / Select option: ").strip()
 
         if choice == "1":
-            clean_paths(platform, lang)
+            clean_paths(platform)
         elif choice == "2":
-            show_information()
-        elif choice == "3":
-            # Change Platform
-            if platform == "Steam":
-                platform = "Microsoft Store"
-                ascii_art = ASCII_MS
-            elif platform == "Microsoft Store":
-                platform = "Epic Games"
-                ascii_art = ASCII_EPIC
-            else:
-                platform = "Steam"
-                ascii_art = ASCII_STEAM
+            platform = "Steam" if platform != "Steam" else "Microsoft Store"  # упрощённо, можно расширить
+            ascii_art = ASCII_STEAM if platform == "Steam" else ASCII_MS
             save_settings(lang, platform)
-            print(texts.get("platform_changed", "Platform changed successfully!"))
+            print(texts["platform_changed"])
+            input("Нажмите Enter...")
+        elif choice == "3":
+            lang = change_language() if 'change_language' in locals() else "ru"
+            texts = get_texts(lang)
+            save_settings(lang, platform)
+            print(texts["language_changed"])
             input("Нажмите Enter...")
         elif choice == "4":
             print("\n" + texts["goodbye"])
@@ -275,20 +263,6 @@ def main():
         else:
             print(texts.get("invalid", "Неверный выбор!"))
             input("Нажмите Enter...")
-
-def show_information():
-    clear_console()
-    print("="*70)
-    print("created by whybladez /// DbD Cleaner (v1.0) - Latest version of the cleaner.")
-    print("")
-    print("The cleaner will help bypass HWID ban / license ban.")
-    print("")
-    print("FOR FULL BYPASS YOU NEED A SPOOFER! Our private spoofer:")
-    print("")
-    print("https://rubyspoofer.github.io/ruby/")
-    print("Discord - discord.gg/btJn66hAuM")
-    print("="*70)
-    input("\nPress Enter to return to menu...")
 
 def change_language():
     clear_console()

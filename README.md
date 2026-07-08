@@ -1,4 +1,4 @@
-# dbd-cleaner-ban
+# dbd-cleaner-ban ПОДХОДИТ ТОЛЬКО ДЛЯ MICROSOFT STORE
 Клинер для игры Dead by Daylight который поможет обойти бан по железу / бан по лицензии от Microsoft.
 
 **Системные требования:**
